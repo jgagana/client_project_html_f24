@@ -7,13 +7,41 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/reset.css">
     <style>
-       
+        /* Add responsive iframe and section adjustments */
+        iframe {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16 / 9;
+            max-width: 100%;
+        }
+
+        section div {
+            max-width: 100%;
+            overflow: hidden;
+            box-sizing: border-box;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Additional styles to ensure responsiveness */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 10px;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+
         a {
             text-decoration: underline;
             color: #00447C;
         }
-        
-        
+
         .button {
             display: inline-block;
             padding: 10px 20px;
@@ -27,7 +55,6 @@
             background-color: #00274c;
         }
 
-        
         .urgent {
             background-color: #b51e23;
         }
@@ -41,7 +68,6 @@
 <body>
     <a href="#main" class="skip-to-main">Skip to Main Content</a>
 
-    
     <header role="banner">
         <nav role="navigation">
             <ul>
@@ -53,7 +79,6 @@
         </nav>
     </header>
 
-    
     <main id="main" role="main">
         <h1>AM I A FIRST-GENERATION COLLEGE STUDENT?</h1>
         <p>At the University of Michigan, undergraduates and graduate students are considered first-generation college students if neither parent or guardian has completed a 4-year college or university degree.</p>
@@ -74,7 +99,7 @@
             <div>
                 <h2>Being FirstGen at U-M</h2>
                 <div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/mJM_CeGnfJo" title="First-Generation College Students at Michigan | Trailblazers" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/mJM_CeGnfJo" title="First-Generation College Students at Michigan | Trailblazers" allowfullscreen></iframe>
                 </div>
             </div>
 
@@ -129,7 +154,6 @@
         </section>
     </main>
 
-    
     <footer role="contentinfo">
         <div>
             <div>
@@ -147,14 +171,4 @@
                     <a href="https://www.facebook.com/groups/32939189627/">Facebook</a> |
                     <a href="https://twitter.com/search?q=%23UMich1stGen&src=typd">Twitter</a> |
                     <a href="https://youtube.com/@umichdiversity">YouTube</a> |
-                    <a href="https://www.instagram.com/umfirstgen/">Instagram</a> |
-                    <a href="https://www.linkedin.com/company/umichdei/">LinkedIn</a>
-                </p>
-            </div>
-        </div>
-        <div>
-            <p>2024 The Regents of the University of Michigan</p>
-        </div>
-    </footer>
-</body>
-</html>
+                    <a href="
