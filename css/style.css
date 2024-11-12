@@ -21,6 +21,10 @@ header p{
     padding: 10px 0;
 }
 
+#error {
+
+    text-align: center;
+}
 
 header img {
     max-width: 100%;
@@ -39,6 +43,7 @@ section {
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 20px;
+    justify-items: center;
 }
 
 section div {
@@ -198,6 +203,7 @@ header div h2 {
     font-weight: bolder;
 
 }
+
 button:hover {
     background-color: #003366;
     color: #f6c300;
@@ -208,3 +214,257 @@ a {
     color: #00447C; 
 }
 
+.current-page a {
+    background-color: #f6c300; 
+    color: #00274c; 
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.current-page a:hover {
+    background-color: #ffd700; 
+}
+
+@media (min-width: 768px) {
+
+    body {
+        padding: 20px;
+    }
+
+    header {
+        padding: 20px 0;
+    }
+
+    header img {
+        width: 30%; 
+    }
+
+    section {
+        display: grid;
+        justify-items: center;
+        gap: 30px; 
+        padding: 25px;
+        text-align: center;
+    }
+
+ 
+    nav ul {
+        display: block; 
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        text-align: center;
+    
+    }
+
+    nav ul li {
+        padding: 10px 20px;
+        
+        background-color: #00447c;
+        margin-bottom: 5px;
+    }
+
+    nav ul li a {
+        font-size: 1.4rem; 
+        color: #f6c300;
+        text-decoration: none;
+        display: block;
+        font-size: 2rem;
+    }
+
+    nav ul li:hover {
+        background-color: #003366;
+    }
+    
+
+    h1 {
+        font-size: 4rem; 
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: bolder;
+    
+    }
+
+    h2 {
+        font-size: 4rem;
+        margin-top: 40px; 
+    }
+
+    address {
+        font-size: 2rem;
+        padding: 40px;
+
+    }
+
+    address a {
+        font-size: 2rem;
+        padding: 40px;
+
+    }
+
+    
+    section.support-options {
+
+        padding: 40px;
+        margin-top: 100px;
+    }
+    a {
+        font-size: 2rem;
+
+    }
+
+    p, li {
+        font-size: 2rem;
+    }
+
+    footer {
+        padding: 20px 10px;
+    }
+
+    footer p {
+        font-size: 2rem;
+    }
+
+    button {
+        
+        font-size: 2rem;
+    }
+
+   
+    .skip-to-main {
+        position: absolute;
+        top: -100px;
+        left: 10px;
+        background-color: #fff;
+        color: #000;
+        padding: 5px;
+        border: 1px solid #000;
+        z-index: 100;
+    }
+
+    .current-page a {
+        background-color: #f6c300; 
+        color: #00274c; 
+        font-weight: bold;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease; 
+    }
+    
+    .current-page a:hover {
+        background-color: #ffd700; 
+    }
+
+    h1.error {
+
+        text-align: center;
+    }
+
+    
+}
+
+@media (min-width: 1024px) {
+
+    
+    
+    
+    body {
+        padding: 20px;
+    }
+
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 50px;
+    }
+
+    header img {
+        width: 150px;
+        height: auto;
+        
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 10px;
+        padding: 0;
+        list-style: none;
+        margin: 0;
+        text-align: left;
+    }
+
+    nav ul li {
+        width: 100%; 
+        padding: 10px;
+        background-color: #00447c;
+    }
+
+    nav ul li a {
+        font-size: 1.4rem;
+        color: #f6c300;
+        text-decoration: none;
+    
+        padding: 5px;
+    }
+
+    nav ul li:hover {
+        background-color: #003366;
+    }
+
+    .current-page a {
+        background-color: #f6c300;
+        color: #00274c;
+        font-weight: bold;
+        padding: 15px 20px;
+    }
+
+    
+    section {
+        display: grid;
+    }
+
+    #physical-health {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px; 
+        align-items: start;
+    }
+
+    #physical-health article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #physical-health img {
+        width: 80%; 
+        max-width: 400px;
+        border-radius: 5px;
+    }
+
+    #physical-health > p {
+        grid-column: span 2; 
+        margin-bottom: 30px; 
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h1.error {
+
+        text-align: center;
+    }
+    
+}
