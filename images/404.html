@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1 class="error">404 <br> Oops! Page Not Found</h1>
+    </header>
+    <main>
+        <section>
+            <h2>We couldn't find the page you're looking for.</h2>
+            <p>It might have been moved or deleted. Please check the URL or head back to the <a href="index.html">home page</a>.</p>
+            
+        </section>
+    </main>
+    <footer>
+        <p>MSI Academic Advising | <a href="msiacademicadvising.html">UMSI Academic Advising</a></p>
+        <p>&copy; <span id="currentYear"></span> University of Michigan School of Information</p>
+    </footer>
+
+    <script>
+        
+        const currentYear = new Date().getFullYear();
+        
+        document.getElementById('currentYear').textContent = currentYear;
+    </script>
+    
+</body>
+</html>
