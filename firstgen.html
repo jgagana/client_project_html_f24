@@ -69,11 +69,12 @@
     <a href="#main" class="skip-to-main">Skip to Main Content</a>
 
     <header role="banner">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav role="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="caps.html">Counseling and Psychological Services (CAPS)</a></li>
-                <li><a href="firstgen.html">First Generation Students</a></li>
+                <li class="current-page"><a href="firstgen.html">First Generation Students</a></li>
                 <li><a href="msiacademicadvising.html">MSI Academic Advising - Fall 2024 Important Dates</a></li>
             </ul>
         </nav>
@@ -157,18 +158,29 @@
     <footer role="contentinfo">
         <div>
             <div>
-                <h3>Email</h3>
+            
                 <p><a href="mailto:firstgeninfo@umich.edu">firstgeninfo@umich.edu</a></p>
             </div>
             <div>
-                <h3>Address</h3>
+                
                 <p>3009 Student Activities Building</p>
                 <p>515 E. Jefferson, Ann Arbor, MI</p>
             </div>
             <div>
-                <h3>Social</h3>
+                
                 <p>
                     <a href="https://www.facebook.com/groups/32939189627/">Facebook</a> |
                     <a href="https://twitter.com/search?q=%23UMich1stGen&src=typd">Twitter</a> |
-                    <a href="https://youtube.com/@umichdiversity">YouTube</a> |
-                    <a href="
+                    <a href="https://youtube.com/@umichdiversity">YouTube</a> </p>
+
+                    
+                        <p>MSI Academic Advising | <a href="msiacademicadvising.html">UMSI Academic Advising</a></p>
+                        <p>&copy; <span id="currentYear"></span> University of Michigan School of Information</p>
+    </footer>
+                
+                    <script>
+                        
+                        const currentYear = new Date().getFullYear();
+                        
+                        document.getElementById('currentYear').textContent = currentYear;
+                    </script>
