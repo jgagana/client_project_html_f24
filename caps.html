@@ -13,14 +13,11 @@
     <a href="#main" class="skip-to-main">Skip to Main Content</a>
     
     <header role="banner">
-        <div>
-            <h1>University Health & Counseling</h1>
-            <h2>Counseling and Psychological Services (CAPS)</h2>
-        </div>
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav role="navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="caps.html">Counseling and Psychological Services (CAPS)</a></li>
+                <li class="current-page"><a href="caps.html">Counseling and Psychological Services (CAPS)</a></li>
                 <li><a href="firstgen.html">First Generation Students</a></li>
                 <li><a href="msiacademicadvising.html">MSI Academic Advising - Fall 2024 Important Dates</a></li>
             </ul>
@@ -138,7 +135,18 @@
             <a href="mailto:caps-uofm@umich.edu" style="text-decoration: underline;">caps-uofm@umich.edu</a><br>
         </address>
         <p>Urgent/Crisis Support at CAPS: Monday - Friday, 10am - 4:30pm</p>
+
+
+        <p>MSI Academic Advising | <a href="msiacademicadvising.html">UMSI Academic Advising</a></p>
+        <p>&copy; <span id="currentYear"></span> University of Michigan School of Information</p>
     </footer>
+
+    <script>
+        
+        const currentYear = new Date().getFullYear();
+        
+        document.getElementById('currentYear').textContent = currentYear;
+    </script>
 </body>
 
 </html>
