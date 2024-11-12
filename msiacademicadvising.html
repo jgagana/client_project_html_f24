@@ -11,12 +11,13 @@
     <a href="#main" class="skip-to-main">Skip to Main Content</a>
 
     <header role="banner">
+        <img src="images/UMSI_signature_vertical_informal_solidblue.jpg" alt="UMSI Logo">
         <nav aria-label="Primary navigation">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="caps.html">Counseling and Psychological Services (CAPS)</a></li>
                 <li><a href="firstgen.html">First Generation Students</a></li>
-                <li><a href="msiacademicadvising.html">MSI Academic Advising - Fall 2024 Important Dates</a></li>
+                <li class="current-page"><a href="msiacademicadvising.html">MSI Academic Advising - Fall 2024 Important Dates</a></li>
             </ul>
         </nav>
     </header>
@@ -58,24 +59,21 @@
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="important_dates.html">Fall 2024 Important Dates</a></li>
-                    <li>
-                        <a href="academic_advising.html">Academic Advising</a>
-                        <ul>
-                            <li><a href="advising.html">Advising Overview</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="#">MSI Degree Requirements</a>
-                        <ul>
-                            <li><a href="requirements.html">Degree Requirements Overview</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="academic_advising.html">Academic Advising</a></li>
+                        
+                    <li><a href="advising.html">Advising Overview</a></li>
+                        
+                    
+                    <li><a href="#">MSI Degree Requirements</a></li>
+                    <li><a href="requirements.html">Degree Requirements Overview</a></li>
+                        
+                    
                     <li>
                         <a href="degreeprogress.html">Degree Progress & Registration</a>
-                        <ul>
-                            <li><a href="progress.html">Progress Overview</a></li>
-                        </ul>
-                    </li>
+                        </li>
+                    <li><a href="progress.html">Progress Overview</a></li>
+                    
+                    
                     <li><a href="support.html">Student Support Resources</a></li>
                     <li><a href="success_tutoring.html">Academic Success and Tutoring</a></li>
                     <li><a href="course_waivers.html">Course Waivers, Academic Policies, and Forms</a></li>
@@ -88,6 +86,16 @@
 
     <footer role="contentinfo">
         <p>MSI Academic Advising | <a href="umsi.advising.msi@umich.edu">MSI Academic Advising</a></p>
+        <p>&copy; <span id="currentYear"></span> University of Michigan School of Information</p>
     </footer>
+
+    <script>
+        
+        const currentYear = new Date().getFullYear();
+        
+        document.getElementById('currentYear').textContent = currentYear;
+    </script>
+
+    
 </body>
 </html>
